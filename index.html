@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>FuglyDo5</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+		<header>&lt;FuglyDo5&gt; <em>&lt;!-- todo app for the modern browser --&gt;</em></header>
+
+		<form>
+			<input type="text" id="txtNew" />
+		</form>
+
+		<div id="Msg"></div>
+
+		<section>
+			<menu>
+				<li class="Selected"><a href="#" id="Show_todo">todo</a></li>
+				<li><a href="#" id="Show_done">done</a></li>
+			</menu>
+			<ul></ul>
+		</section>
+
+		<footer>
+			<a href="#" id="ImportLink">import</a> | <a href="#" id="ExportLink">export</a> | <a href="#" id="RemoveAll">remove all</a>
+			<p>Made by <a href="http://hancic.info">Jan Hančič</a> for WebKit, Firefox &amp; IE9</p>
+		</footer>
+
+		<div id="Import">
+			Paste the text you copied from the "export" dialog and click the "Import" button.<br />NOTE: this will delete all current TO-DOs!
+			<textarea></textarea>
+			<input type="button" id="btnImport" value="import" /> <input type="button" id="btnCancel" value="cancel" />
+		</div>
+
+		<div id="Export">
+			Copy the contents of the textarea below to the "import" dialog on some other computer / browser:
+			<textarea></textarea>
+			<a href="#">close</a>
+		</div>
+
+		<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
